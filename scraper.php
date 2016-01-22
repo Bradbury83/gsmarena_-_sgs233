@@ -15,6 +15,7 @@ foreach($dom->find("div#specs-list tr") as $data)
         'NAME' => $tds[0]->plaintext, 
         'VALUE' => $tds[1]->plaintext
     );
-    print_r($record);
+    $szoveg = $tds[0]->plaintext.','.$tds[1]->plaintext;
+    print_r($szoveg);
 }
 ?>
